@@ -1,0 +1,53 @@
+page-transport {
+
+  .bg-img{
+    background-image: url('../assets/imgs/transport_map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .no-scroll .scroll-content{
+    overflow: hidden;
+  }
+  #maps {
+    display: block;
+    height: 78%;
+    margin-top: 22%;
+    margin-left: 0%;
+  }
+  .from{
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+    z-index: 5;
+    background-color:transparent;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  .to{
+    position: absolute;
+    bottom: 05px;
+    right: 80px;
+    z-index: 5;
+    background-color:transparent;
+    padding: 5px;
+    text-align: center;
+    line-height: 30px;
+    padding-left: 10px;
+  }
+  .matricule{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    text-align: center;
+  }
+  .imat{
+    position: absolute;
+    top: 0%;
+    left: 35%;
+    text-align: center;
+  }
+
+}

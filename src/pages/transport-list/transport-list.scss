@@ -1,0 +1,23 @@
+page-transport-list {
+  .bg-img{
+    background-image: url('../assets/imgs/transport_list_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0;
+    direction: rtl;
+  }
+  .principale{
+    margin:auto;
+    margin-bottom:5%;
+    border: 2px solid #323642;
+    border-radius: 15px;
+  }
+  .second{
+    float: left;
+    margin-top: 10%;
+  }
+  .date{
+    margin-right: 18%;
+  }
+}

@@ -1,0 +1,27 @@
+<ion-header>
+
+    <ion-navbar hideBackButton>
+      <img src="../assets/imgs/header_housing.jpg" alt="">
+    </ion-navbar>
+
+  </ion-header>
+<ion-content class="bg-img no-scroll" padding>
+        <div class="principale"*ngFor="let houssing of houssings" (click)="houssing_details(houssing.id)">
+            <label class="date" style="font-size: 20px;color:#323742;font-weight: regular;font-family: Tajawal" stacked dir="rtl"></label>
+            <div col-4 class="second">
+                <img src="../assets/imgs/hotel-icon.png">
+            </div>
+            <div col-8>
+                <div class="first">
+                  <label style="font-size: 22px;color:#323742;font-weight: bold;font-family: Tajawal" stacked dir="rtl">الإقامة : </label><span style="font-weight: regular;font-size: 22px;color:#323742;font-family: Tajawal">{{houssing.name}} </span>
+                  <br>
+                  <label style="font-size: 22px;color:#323742;font-weight: bold;font-family: Tajawal" stacked dir="rtl" >الدخول :</label><span style="font-weight: regular;font-size: 22px;color:#323742;font-family: Tajawal">{{houssing.start}}</span>
+                  <br>
+                  <label style="font-size: 22px;color:#323742;font-weight: bold;font-family: Tajawal" stacked dir="rtl">الخروج :</label> <span style="font-weight: regular;font-size: 22px;color:#323742;font-family: Tajawal">{{houssing.end}}</span>
+                  <br><br>
+                </div>
+
+            </div>
+        </div>
+
+</ion-content>

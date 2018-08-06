@@ -1,0 +1,28 @@
+<ion-header>
+
+    <ion-navbar hideBackButton>
+      <img src="../assets/imgs/header_transport.jpg" alt="">
+    </ion-navbar>
+
+  </ion-header>
+<ion-content class="bg-img no-scroll" padding>
+        <div class="principale" *ngFor="let travel of travels" (click)="travel_details(travel.id)">
+            <label class="date" style="font-size: 18px;color:#323742;font-weight: regular;font-family: Tajawal" stacked dir="rtl">{{travel.travel_time}} </label>
+            <div col-4 class="second">
+                <img src="../assets/imgs/bus-icon.png">
+            </div>
+            <div col-8>
+                <div class="first">
+                  <label style="font-size: 22px;color:#323742;font-weight: bold;font-family: Tajawal" stacked dir="rtl">مواصلات : </label><span style="font-weight: regular;font-size: 22px;color:#323742;font-family: Tajawal">{{travel.matricule}} </span>
+                  <br>
+                  <label style="font-size: 22px;color:#323742;font-weight: bold;font-family: Tajawal" stacked dir="rtl" >من :</label><span style="font-weight: regular;font-size: 22px;color:#323742;font-family: Tajawal">{{travel.start}}</span>
+                  <br>
+                  <label style="font-size: 22px;color:#323742;font-weight: bold;font-family: Tajawal" stacked dir="rtl">إلى :</label> <span style="font-weight: regular;font-size: 22px;color:#323742;font-family: Tajawal">{{travel.arrive}}</span>
+
+                </div>
+                <br><br>
+            </div>
+        </div>
+
+
+</ion-content>
